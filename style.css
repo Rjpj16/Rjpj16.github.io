@@ -9,22 +9,24 @@ color: #333333;
 }
 
 
-nav {
+.navbar {
 background-color: #d6baa0;
 padding: 10px;
-text-align: center; 
+text-align: center;
 }
 
-nav a {
-text-decoration: none;
-margin: 0 15px 25px;
-font-weight: bold;
-color: #0E2841;
-transition: color 0.5s;
+.navbar .nav-link {
+  color: #0E2841;       /* azul oscuro de tu paleta */
+  font-weight: 600;     /* similar a negrita */
 }
 
-nav a:hover {
-color: #848484;
+.navbar .nav-link:hover {
+  color: #5c5c5c;       /* gris al pasar el mouse */
+}
+
+.navbar .navbar-brand {
+  color: #0E2841;
+  font-weight: 700;
 }
 
 section {
