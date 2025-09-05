@@ -30,7 +30,7 @@
   <header>
     <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
       <div class="container px-3 px-md-4 px-lg-5">
-        <a class="navbar-brand" href="#home">Home</a>
+        <a class="navbar-brand ms-5" href="#home">Home</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
           aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,12 +38,12 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav me-5 ms-auto">
             <li class="nav-item"><a class="nav-link" href="#chisono">Chi sono</a></li>
             <li class="nav-item"><a class="nav-link" href="#competenze">Competenze</a></li>
             <li class="nav-item"><a class="nav-link" href="#esperienzelavorative">Esperienze Lavorative</a></li>
             <li class="nav-item"><a class="nav-link" href="#educazione">Formazione</a></li>
-            <li class="nav-item"><a class="nav-link" href="#passioni">Extracurricular Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#passioni">Attività Extracurriculari</a></li>
             <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
           </ul>
         </div>
@@ -2048,6 +2048,7 @@
             Corretto!
           </div>
         </div>
+
         <div class="col-md-4 position-relative">
           <label for="validationTooltip02" class="form-label"> Cognome</label>
           <input type="text" class="form-control" id="validationTooltip02" value="" required>
@@ -2055,6 +2056,7 @@
             Corretto!
           </div>
         </div>
+
         <div class="col-md-4 position-relative">
           <label for="validationTooltipUsername" class="form-label"> Indirizzo mail</label>
           <div class="input-group has-validation">
@@ -2066,6 +2068,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-6 position-relative">
           <label for="validationTooltip03" class="form-label"> Azienda</label>
           <input type="text" class="form-control" id="validationTooltip03" required>
@@ -2073,6 +2076,7 @@
             Azienda non valida.
           </div>
         </div>
+
         <div class="col-md-3 position-relative">
           <label for="validationTooltip04" class="form-label"> Citta'</label>
           <select class="form-select" id="validationTooltip04" required>
@@ -2093,6 +2097,7 @@
             Citta' non valida!
           </div>
         </div>
+
         <div class="col-md-3 position-relative">
           <label for="validationTooltip05" class="form-label"> Telefono</label>
           <input type="text" class="form-control" id="validationTooltip05" required>
@@ -2100,8 +2105,17 @@
             Numero di telefono non valido
           </div>
         </div>
+
+        <div class="col-12 position-relative">
+          <label for="validationTooltip06" class="form-label">Messaggio</label>
+          <textarea class="form-control" id="validationTooltip06" rows="4" required></textarea>
+          <div class="invalid-tooltip">
+            Inserisci un messaggio.
+          </div>
+        </div>
+
         <div class="col-12">
-          <button class="btn btn-primary button-color" type="submit"> Invio</button>
+          <button class="btn btn-primary button-color" type="submit">Invio</button>
         </div>
       </form>
     </section>
