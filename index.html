@@ -2040,46 +2040,40 @@
       <div class="mt-3 text">
         Compila il form e ti contatterò subito!
       </div>
-      <form class="row g-3 mt-3 needs-validation" novalidate>
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltip01" class="form-label"> Nome</label>
-          <input type="text" class="form-control" id="validationTooltip01" value="" required>
-          <div class="valid-tooltip">
-            Corretto!
+      <form class="row g-3 mt-3" action="https://formspree.io/f/mjkepqng" method="POST">
+        <!-- Opcional: asunto del email que recibirás -->
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde el CV">
+
+        <!-- Opcional: honeypot anti-spam (no borrar el name) -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <div class="col-md-4">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="cognome" class="form-label">Cognome</label>
+          <input type="text" class="form-control" id="cognome" name="cognome" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="email" class="form-label">Indirizzo mail</label>
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
           </div>
         </div>
 
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltip02" class="form-label"> Cognome</label>
-          <input type="text" class="form-control" id="validationTooltip02" value="" required>
-          <div class="valid-tooltip">
-            Corretto!
-          </div>
+        <div class="col-md-6">
+          <label for="azienda" class="form-label">Azienda</label>
+          <input type="text" class="form-control" id="azienda" name="azienda">
         </div>
 
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltipUsername" class="form-label"> Indirizzo mail</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-            <input type="text" class="form-control" id="validationTooltipUsername"
-              aria-describedby="validationTooltipUsernamePrepend" required>
-            <div class="invalid-tooltip">
-              e-mail non corretta!
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 position-relative">
-          <label for="validationTooltip03" class="form-label"> Azienda</label>
-          <input type="text" class="form-control" id="validationTooltip03" required>
-          <div class="invalid-tooltip">
-            Azienda non valida.
-          </div>
-        </div>
-
-        <div class="col-md-3 position-relative">
-          <label for="validationTooltip04" class="form-label"> Citta'</label>
-          <select class="form-select" id="validationTooltip04" required>
+        <div class="col-md-3">
+          <label for="citta" class="form-label">Città</label>
+          <select class="form-select" id="citta" name="citta" required>
+            <option value="" selected disabled>Seleziona...</option>
             <option>Milano</option>
             <option>Genova</option>
             <option>Torino</option>
@@ -2093,31 +2087,24 @@
             <option>Altro</option>
             <option>Stato Estero</option>
           </select>
-          <div class="invalid-tooltip">
-            Citta' non valida!
-          </div>
         </div>
 
-        <div class="col-md-3 position-relative">
-          <label for="validationTooltip05" class="form-label"> Telefono</label>
-          <input type="text" class="form-control" id="validationTooltip05" required>
-          <div class="invalid-tooltip">
-            Numero di telefono non valido
-          </div>
+        <div class="col-md-3">
+          <label for="telefono" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel">
         </div>
 
-        <div class="col-12 position-relative">
-          <label for="validationTooltip06" class="form-label">Messaggio</label>
-          <textarea class="form-control" id="validationTooltip06" rows="4" required></textarea>
-          <div class="invalid-tooltip">
-            Inserisci un messaggio.
-          </div>
+        <!-- Campo Messaggio -->
+        <div class="col-12">
+          <label for="messaggio" class="form-label">Messaggio</label>
+          <textarea class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
         </div>
 
         <div class="col-12">
           <button class="btn btn-primary button-color" type="submit">Invio</button>
         </div>
       </form>
+
     </section>
 
   </main>
